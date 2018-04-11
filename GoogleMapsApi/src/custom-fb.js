@@ -278,6 +278,7 @@ Functions wrote by Bálint
   
 //Közeli helyeken, dombokon hegyeken
   function nearbyPlaces(){
+    FB.api('/search?type=place&center=47.5133138,19.0565847&distance=150',
         function (response) {
           if (response && !response.error) {
 			  window.alert(JSON.stringify(response));
