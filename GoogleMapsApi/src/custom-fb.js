@@ -276,7 +276,16 @@ Functions wrote by Bálint
   }
 
   
-	
+//Közeli helyeken, dombokon hegyeken
+  function nearbyPlaces(){
+        function (response) {
+          if (response && !response.error) {
+			  window.alert(JSON.stringify(response));
+
+          }else{window.alert(JSON.stringify(response.error));}
+        }
+    );
+  }	
 	
 	
 	
